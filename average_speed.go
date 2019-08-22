@@ -38,7 +38,7 @@ func main() {
 		var err error
 		athleteAccessToken, err = Authorize(appClientId, appClientSecret)
 		if err != nil {
-			fmt.Printf("Failed to obtain athlete access token\n")
+			fmt.Printf("Failed to obtain athlete access token: %s\n", err)
 			os.Exit(1)
 		}
 	}
